@@ -6,16 +6,20 @@
 
 /* Color palette and typography variables */
 :root {
-  --primary: #52b3c9; /* turquoise */
-  --secondary: #f7985e; /* coral */
-  --text-dark: #0e3141; /* dark navy */
-  --background: #ffffff;
+  /* Light theme palette inspired by academic profile sites */
+  --primary: #52b3c9; /* turquoise accent for links and highlights */
+  --secondary: #f7985e; /* coral accent for hover */
+  --text-light: #0e3141; /* primary text color on light background */
+  --text-muted: #66788f; /* muted text for metadata */
+  --background: #ffffff; /* overall page background */
+  --section-bg: #ffffff; /* background for content sections */
+  --border-color: #eaeaea; /* subtle separators */
 }
 
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  color: var(--text-dark);
+  color: var(--text-light);
   background-color: var(--background);
   line-height: 1.65;
 }
@@ -30,91 +34,12 @@ a:hover {
   color: var(--secondary);
 }
 
-/* Navigation bar */
+/* Navigation removed in single‑page layout */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: var(--background);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  display: none;
 }
 
-nav .logo a {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: var(--primary);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li a {
-  color: var(--text-dark);
-  font-weight: 600;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  color: var(--primary);
-}
-
-/* Hero section */
-.hero {
-  position: relative;
-  height: 350px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('images/hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  z-index: -2;
-}
-
-/* Semi-transparent overlay to improve readability */
-.hero::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  z-index: -1;
-}
-
-.hero h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--text-dark);
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: var(--text-dark);
-}
+/* Hero removed; replaced with intro section */
 
 /* Generic container for page content */
 .container {
@@ -122,23 +47,27 @@ nav ul li a.active {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
+  background-color: var(--section-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
 }
 
 /* About section layout */
-.about-section {
+/* Introduction layout */
+.intro-section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  align-items: flex-start;
-  margin-bottom: 3rem;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-.about-section .text {
+.intro-text {
   flex: 2;
   min-width: 260px;
 }
 
-.about-section .profile {
+.intro-image {
   flex: 1;
   min-width: 200px;
   display: flex;
@@ -146,13 +75,48 @@ nav ul li a.active {
   align-items: center;
 }
 
-.about-section .profile img {
+.intro-image img {
   width: 100%;
-  max-width: 200px;
+  max-width: 220px;
   border-radius: 50%;
+  border: 2px solid var(--border-color);
 }
 
-.about-section ul {
+.tagline {
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  /* Icons inherit their native dark color on light backgrounds */
+  filter: none;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+/* Standalone social icon row placed between sections */
+.social-icons.standalone {
+  width: 90%;
+  max-width: 900px;
+  margin: 1rem auto 2rem auto;
+}
+
+/* List styling */
+.about-section ul,
+.container ul {
   list-style: disc;
   margin-left: 1.5rem;
 }
@@ -162,14 +126,22 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   margin: 1.5rem 0 0.75rem;
-  color: var(--text-dark);
+  color: var(--text-light);
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
   margin-top: 1rem;
-  color: var(--text-dark);
+  color: var(--text-light);
+}
+
+/* Headline style for the main name */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin: 0;
+  color: var(--text-light);
 }
 
 /* Lists for education, publications and experience */
@@ -199,16 +171,17 @@ h3 {
 .experience-list li p {
   margin: 0.25rem 0;
   line-height: 1.4;
+  color: var(--text-muted);
 }
 
 /* Footer styling */
 footer {
   background-color: var(--background);
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid var(--border-color);
   padding: 1rem 0;
   text-align: center;
   font-size: 0.9rem;
-  color: var(--text-dark);
+  color: var(--text-muted);
 }
 
 footer p {
@@ -217,28 +190,9 @@ footer p {
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .about-section {
+  .intro-section {
     flex-direction: column;
     align-items: center;
     text-align: left;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav ul {
-    margin-top: 0.5rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
   }
 }
