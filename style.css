@@ -74,13 +74,28 @@ section.container + section.container {
   /* Reduce horizontal gap between image and text for a tighter layout */
   gap: 1rem;
   align-items: center;
-  /* Smaller bottom margin to minimise space before social icons */
-  margin-bottom: 1rem;
+  /* Use a very small bottom margin to create only a single‑line gap before the social icons */
+  margin-bottom: 0.25rem;
 }
 
 .intro-text {
   flex: 2;
   min-width: 260px;
+}
+
+/* Adjust paragraph spacing inside the introduction.  The default browser margin on
+   paragraphs is quite large, which creates a big gap before the social
+   icons.  Reducing the bottom margin on paragraphs makes the
+   introduction flow neatly into the icon row. */
+.intro-text p {
+  margin-bottom: 0.25rem;
+}
+
+/* Remove the bottom margin on the final paragraph so that the spacing between
+   the last line of text and the social icons is roughly equivalent to
+   a single line break. */
+.intro-text p:last-child {
+  margin-bottom: 0;
 }
 
 .intro-image {
@@ -131,8 +146,8 @@ section.container + section.container {
 .social-icons.standalone {
   width: 90%;
   max-width: 900px;
-  /* Reduce spacing above and below social icons */
-  margin: 0.5rem auto 1.5rem auto;
+  /* Reduce spacing above and below social icons.  A very small top margin ensures the icons sit directly beneath the introduction. */
+  margin: 0.25rem auto 1.5rem auto;
 }
 
 /* List styling */
@@ -207,6 +222,48 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/*
+ * arXiv badge styling
+ * Adds a small pill‑shaped label used to link to arXiv papers. The badge
+ * uses a soft peach background reminiscent of the official arXiv colour,
+ * dark text for contrast and subtle rounding. The font weight matches
+ * the body text to avoid drawing excessive attention. Hovering slightly
+ * darkens the background for a tactile effect.
+ */
+.arxiv-badge {
+  display: inline-block;
+  background-color: #fff2e6;
+  color: #333333;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #f8d8c6;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.arxiv-badge:hover {
+  background-color: #ffe5cc;
+}
+
+/* Coursework list styling: align bullets flush with the section heading.
+   The default container list indentation (1.5rem) pushes course items too
+   far to the right relative to the "Related Coursework" heading.  By
+   resetting the margins and using a modest left padding we align the
+   bullets underneath the heading similarly to other lists on the page. */
+.coursework-list {
+  list-style: disc;
+  /* Remove default indentation on coursework lists so bullets align with
+     other section lists (e.g. professional experience). */
+  margin: 0;
+  padding-left: 0.75rem;
+}
+
+.coursework-list li {
+  margin-bottom: 0.5rem;
 }
 
 /* Responsive design */
