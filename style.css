@@ -50,6 +50,9 @@ nav {
   /* Remove background and border for minimalist look */
   background-color: transparent;
   border: none;
+  /* Explicitly remove any left or right borders */
+  border-left: none;
+  border-right: none;
   border-radius: 0;
 }
 
