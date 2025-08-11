@@ -47,9 +47,20 @@ nav {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 1rem;
-  background-color: var(--section-bg);
-  border: 1px solid var(--border-color);
-  border-radius: 8px;
+  /* Remove background and border for minimalist look */
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+/* Add a subtle divider line between consecutive content sections */
+section.container + section.container {
+  border-top: 1px solid var(--border-color);
+}
+
+/* Also add divider after the social icon row so the next section starts with a line */
+.social-icons.standalone + section.container {
+  border-top: 1px solid var(--border-color);
 }
 
 /* About section layout */
@@ -75,9 +86,11 @@ nav {
   align-items: center;
 }
 
+/* Profile image sizing: make portrait smaller for a balanced layout */
 .intro-image img {
   width: 100%;
-  max-width: 220px;
+  /* Make portrait smaller to better match example */
+  max-width: 160px;
   border-radius: 50%;
   border: 2px solid var(--border-color);
 }
@@ -95,9 +108,10 @@ nav {
   margin-top: 1rem;
 }
 
+/* Social icon sizing: smaller icons for subtlety */
 .social-icons a img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   /* Icons inherit their native dark color on light backgrounds */
   filter: none;
   transition: transform 0.2s ease;
