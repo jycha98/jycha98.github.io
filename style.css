@@ -71,9 +71,11 @@ section.container + section.container {
 .intro-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  /* Reduce horizontal gap between image and text for a tighter layout */
+  gap: 1rem;
   align-items: center;
-  margin-bottom: 2rem;
+  /* Smaller bottom margin to minimise space before social icons */
+  margin-bottom: 1rem;
 }
 
 .intro-text {
@@ -83,7 +85,8 @@ section.container + section.container {
 
 .intro-image {
   flex: 1;
-  min-width: 200px;
+  /* Ensure the image column is wide enough for larger portraits */
+  min-width: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,8 +95,8 @@ section.container + section.container {
 /* Profile image sizing: make portrait smaller for a balanced layout */
 .intro-image img {
   width: 100%;
-  /* Make portrait smaller to better match example */
-  max-width: 160px;
+  /* Increase portrait size to utilise horizontal space */
+  max-width: 240px;
   border-radius: 50%;
   border: 2px solid var(--border-color);
 }
@@ -128,7 +131,8 @@ section.container + section.container {
 .social-icons.standalone {
   width: 90%;
   max-width: 900px;
-  margin: 1rem auto 2rem auto;
+  /* Reduce spacing above and below social icons */
+  margin: 0.5rem auto 1.5rem auto;
 }
 
 /* List styling */
