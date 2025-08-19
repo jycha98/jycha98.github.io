@@ -266,6 +266,83 @@ footer p {
   margin-bottom: 0.5rem;
 }
 
+/*
+ * Coursework section redesign
+ *
+ * The portfolio now organises coursework by institution rather than
+ * presenting a single flat list.  Each group is introduced by a
+ * heading (the institution name) followed by a list of courses.  To
+ * visually separate date, title and code columns the list items are
+ * displayed using flexbox.  The date column has a fixed width while
+ * the title expands to fill the remaining horizontal space and the
+ * course code naturally aligns to the right.  Muted colours are used
+ * for metadata (dates and codes) to draw attention toward the course
+ * titles.  On smaller screens the flex layout gracefully wraps
+ * content to multiple lines.
+ */
+/* container for all coursework groups */
+.coursework-section {
+  /* ensure there is no left padding so group headings align with the
+     section title */
+  padding-left: 0;
+}
+
+/* spacing between groups: reduce vertical whitespace so institutions sit closer together */
+.coursework-section .institution {
+  margin-bottom: 1rem;
+}
+
+/* style for institution heading: support both h3 and h4 levels */
+.coursework-section .institution h3,
+.coursework-section .institution h4 {
+  margin: 0.5rem 0 0.5rem;
+  font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+/* remove bullets for inner coursework lists */
+.coursework-section .institution ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* style for each course entry */
+.coursework-section li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+  /* small gap between date and title for readability */
+  gap: 0.25rem;
+}
+
+.coursework-section li span {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* fixed-width column for dates so they align vertically */
+.coursework-section .course-date {
+  flex: 0 0 6rem;
+  color: var(--text-muted);
+}
+
+/* flexible column for course names */
+.coursework-section .course-title {
+  flex: 1 1 auto;
+}
+
+/* align course codes to the right and use muted colour */
+.coursework-section .course-code {
+  flex: 0 0 auto;
+  color: var(--text-muted);
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .intro-section {

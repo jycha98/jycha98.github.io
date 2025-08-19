@@ -111,18 +111,38 @@
     <!-- Related coursework -->
     <section class="container">
       <h2>Related Coursework</h2>
-      <ul class="coursework-list">
-        <li>Representation Learning (SNU, M3309.0046)</li>
-        <li>Recent Topics in Artificial Intelligence (SNU, M3309.0004)</li>
-        <li>Math and Statistics Foundations for Data Science (SNU, M3239.0058)</li>
-        <li>Optimization for AI (KAIST, AI505)</li>
-        <li>Machine Learning for AI (KAIST, AI501)</li>
-        <li>Brains, Machines and Society (KAIST, EE469)</li>
-        <li>AI Convergence Capstone Design (KAIST, EE488)</li>
-        <li>Introduction to Multimedia (KAIST, EE474)</li>
-        <li>Machine Learning (KAIST, CS376)</li>
-        <li>Data Structures and Algorithms for Electrical Engineering (KAIST, EE205)</li>
-      </ul>
+      <!--
+        The coursework section is grouped by institution.  Each institution
+        heading is followed by a list of courses.  Every course entry
+        includes the term (month and year), the course name and the
+        official course code.  Using semantic spans within each list
+        item allows the accompanying stylesheet to align the date and
+        code columns while keeping the course names fluid.  See
+        style.css for layout details.
+      -->
+      <div class="coursework-section">
+        <div class="institution">
+          <h4>Seoul National University</h4>
+          <ul>
+            <li><span class="course-date">Mar 2025</span><span class="course-title">Representation Learning</span><span class="course-code">M3309.0046</span></li>
+            <li><span class="course-date">Mar 2025</span><span class="course-title">Social Computing</span><span class="course-code">M3309.0011</span></li>
+            <li><span class="course-date">Aug 2024</span><span class="course-title">Recent Topics in Artificial Intelligence</span><span class="course-code">M3309.0004</span></li>
+            <li><span class="course-date">Aug 2024</span><span class="course-title">Math and Statistics Foundations for Data Science</span><span class="course-code">M3239.0058</span></li>
+          </ul>
+        </div>
+        <div class="institution">
+          <h4>KAIST</h4>
+          <ul>
+            <li><span class="course-date">Aug 2023</span><span class="course-title">Optimization for AI</span><span class="course-code">AI505</span></li>
+            <li><span class="course-date">Aug 2023</span><span class="course-title">Machine Learning for AI</span><span class="course-code">AI501</span></li>
+            <li><span class="course-date">Mar 2023</span><span class="course-title">Brains, Machines and Society</span><span class="course-code">EE469</span></li>
+            <li><span class="course-date">Mar 2022</span><span class="course-title">AI Convergence Capstone Design</span><span class="course-code">EE488</span></li>
+            <li><span class="course-date">Mar 2022</span><span class="course-title">Introduction to Multimedia</span><span class="course-code">EE474</span></li>
+            <li><span class="course-date">Mar 2022</span><span class="course-title">Machine Learning</span><span class="course-code">CS376</span></li>
+            <li><span class="course-date">Aug 2021</span><span class="course-title">Data Structures and Algorithms for Electrical Engineering</span><span class="course-code">EE205</span></li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
