@@ -220,6 +220,22 @@ footer {
   color: var(--text-muted);
 }
 
+/* Experience meta row
+   Moves the date onto the same line as the role title and right‑aligns it. */
+.experience-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0.25rem 0;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+/* Prevent the date from wrapping to the next line */
+.experience-meta .experience-date {
+  white-space: nowrap;
+}
+
 footer p {
   margin: 0;
 }
@@ -350,4 +366,42 @@ footer p {
     align-items: center;
     text-align: left;
   }
+}
+
+/* Custom styling for nested experience description lists.  These lists
+   provide concise bullet points beneath each role.  The margins are
+   deliberately small to keep the items visually compact and aligned
+   with the surrounding text. */
+.experience-details {
+  list-style: disc;
+  /* align nested list bullets with other section lists */
+  margin-left: 1.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+}
+
+.experience-details li {
+  margin: 0.25rem 0;
+  /* Match the muted colour used for advisor and date lines so that
+     description bullets blend subtly into the surrounding metadata */
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Title + date on the same line */
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.experience-header .experience-date {
+  font-size: 1rem;          /* matches "Research Intern" font size */
+  color: var(--text-muted); /* same muted gray style */
 }
