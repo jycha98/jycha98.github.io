@@ -231,9 +231,13 @@ footer {
   color: var(--text-muted);
 }
 
-/* Prevent the date from wrapping to the next line */
-.experience-meta .experience-date {
-  white-space: nowrap;
+/* Experience role dates – match Honors style */
+.experience-date {
+  text-align: right;
+  color: var(--text-muted);   /* same grey as Honors dates */
+  font-style: italic;         /* optional: same feel as awards */
+  margin-left: 1rem;          /* small gap from the title */
+  white-space: nowrap;        /* keeps "Jul 2019 - Jan 2021" on one line */
 }
 
 footer p {
@@ -404,4 +408,113 @@ footer p {
 .experience-header .experience-date {
   font-size: 1rem;          /* matches "Research Intern" font size */
   color: var(--text-muted); /* same muted gray style */
+}
+
+/* Align experience title left and date right */
+.experience-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.experience-date {
+  text-align: right;
+}
+
+/* Awards & Honors section */
+.awards-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.award-item {
+  display: flex;
+  justify-content: space-between;  /* text left, date right */
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.award-text {
+  font-size: 1rem;
+}
+
+.award-date {
+  font-style: italic;
+  color: var(--text-muted);
+  white-space: nowrap;             /* keeps the date on one line */
+  margin-left: 1rem;
+}
+
+/* Optional: slightly tighten the Languages line */
+.languages-text {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.languages-text span {
+  margin-right: 1.5rem;   /* this is your "tab" */
+}
+
+/* Selected Coursework */
+.coursework-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.grade-header {
+  text-align: right;
+}
+
+.coursework-school {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.coursework-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.15rem 0;
+  font-size: 1rem;
+}
+
+.course-grade {
+  min-width: 2rem;
+  text-align: right;
+  font-weight: 600;
+}
+
+/* Coursework school + grade label row */
+.coursework-school-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.coursework-school {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.coursework-grade-label {
+  font-weight: 700;
+}
+
+/* Reduce space between "Selected Coursework" and "KAIST" */
+.coursework-title {
+  margin-bottom: 0.6rem;
+}
+
+.coursework-school-row,
+.coursework-school {
+  margin-top: 0.3rem;
+}
+
+.experience-location {
+  color: var(--text-muted);
+  white-space: nowrap;
 }
