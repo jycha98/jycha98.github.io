@@ -105,8 +105,9 @@ a:hover {
 }
 
 .profile-photo {
-  width: 288px;
-  height: 288px;
+  width: min(242.28125px, 100%);
+  height: auto;
+  aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--photo-radius);
@@ -421,12 +422,6 @@ footer {
 }
 
 @media (max-width: 360px) {
-  .profile-photo {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
-  }
-
   .publication {
     grid-template-columns: minmax(0, 1fr);
     gap: 4px;
