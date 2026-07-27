@@ -1,287 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jungyoub Cha | About</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation removed for single-page layout -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jungyoub Cha is a Ph.D. student in Machine Learning at Georgia Tech researching efficient large language models.">
+    <title>Jungyoub Cha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="nav-name" href="#top">Jungyoub Cha</a>
+        <div class="nav-links">
+          <a data-nav="about" href="#about">About</a>
+          <a data-nav="education" href="#education">Education</a>
+          <a data-nav="publications" href="#publications">Publications</a>
+          <a data-nav="experience" href="#experience">Experience</a>
+          <a data-nav="more" href="#more">More</a>
+        </div>
+      </div>
+    </nav>
 
-  <!-- Main Content -->
-  <main>
-    <!-- Introduction, tagline and profile -->
-    <section class="container">
-      <div class="intro-section">
-        <div class="intro-text">
+    <div class="page-layout" id="top">
+      <aside class="profile">
+        <div class="profile-photo">
+          <img src="images/profile.jpeg" alt="Jungyoub Cha" width="288" height="288">
+        </div>
+
+        <div>
           <h1>Jungyoub Cha</h1>
-          <p class="tagline">M.S. Student · Seoul National University</p>
-          <p>
-            Hello, my name is Jungyoub&nbsp;Cha, and I am currently pursuing an M.S. at
-            <a href="http://dm.snu.ac.kr/ko/" target="_blank" rel="noopener noreferrer">Big&nbsp;Data&nbsp;AI&nbsp;Center</a>,
-            <a href="https://gsai.snu.ac.kr/en/" target="_blank" rel="noopener noreferrer">Interdisciplinary&nbsp;Program&nbsp;in&nbsp;Artificial&nbsp;Intelligence</a>,
-            <a href="https://en.snu.ac.kr/" target="_blank" rel="noopener noreferrer">Seoul&nbsp;National&nbsp;University</a>.
-            I earned my B.S. in Electrical Engineering from
-            <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener noreferrer">KAIST</a>, with a minor in Business and Technology Management.
-            I have also previously interned at
-            <a href="https://www.navercorp.com/naver/naverMain" target="_blank" rel="noopener noreferrer">NAVER&nbsp;Corp.</a>
-            and
-            <a href="https://gsai.kaist.ac.kr/" target="_blank" rel="noopener noreferrer">KAIST&nbsp;AI</a>.
-          </p>
-          <p>
-            My research focuses on <strong> making large language models (LLMs) more efficient</strong>, with an emphasis on <strong>algorithmic and system-level optimization</strong>.
-            I work on decoding algorithms, KV cache management, and LLM architectures to make LLMs faster and more cost-efficient.
-          </p>
-          
-          <p>
-            More recently, I have been exploring <strong>improving reasoning efficiency via latent reasoning</strong> and
-            <strong>developing acceleration frameworks for diffusion-based language models</strong>,
-            with the goal of making emerging generative paradigms more practical under real-world computational constraints.
-          </p>
-          
-          <p>
-            My long-term goal is to make powerful language models more broadly accessible, not only to large corporations but also to
-            individual researchers, educators, and resource-constrained labs.
-          </p>
-          <!-- Social icons moved below introduction -->
+          <p class="profile-title">Ph.D. Student in Machine Learning</p>
+          <p class="profile-affiliation">Georgia Institute of Technology</p>
         </div>
-        <div class="intro-image">
-          <img src="images/profile.jpeg" alt="Jungyoub Cha portrait">
-        </div>
-      </div>
-    </section>
 
-    <!-- Standalone social icon row for email and LinkedIn -->
-    <div class="social-icons standalone">
-      <a href="mailto:jungyoub.cha@snu.ac.kr" aria-label="Email Jungyoub Cha">
-        <img src="icons/envelope.svg" alt="Email icon">
-      </a>
-      <a href="https://www.linkedin.com/in/jungyoub-cha-25303a258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-        <img src="icons/linkedin.svg" alt="LinkedIn icon">
-      </a>
-      <!-- Added CV icon linking to the user's résumé on Google Drive -->
-      <a href="https://drive.google.com/file/d/1Bc8XtOOAYeo2oiW6WgW-ZOscNIB_nrJu/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Curriculum Vitae">
-        <img src="icons/cv.svg" alt="CV icon">
-      </a>
+        <ul class="contact-list">
+          <li class="location"><span aria-hidden="true">📍</span>Atlanta, GA</li>
+          <li><span aria-hidden="true">✉</span><a href="mailto:jungyoub.cha@gatech.edu">jungyoub.cha@gatech.edu</a></li>
+          <li><span aria-hidden="true">in</span><a href="https://www.linkedin.com/in/jungyoub-cha-25303a258/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><span aria-hidden="true">🎓</span><a href="https://scholar.google.com/citations?user=PwTLb5cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><span aria-hidden="true">📄</span><a href="https://drive.google.com/file/d/1Bc8XtOOAYeo2oiW6WgW-ZOscNIB_nrJu/view" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <section id="about" class="about">
+          <p>Hi, I'm <strong>Jungyoub Cha</strong>. I am a Ph.D. student in Machine Learning (ECE) at the <a href="https://www.gatech.edu/" target="_blank" rel="noopener noreferrer">Georgia Institute of Technology</a>, advised by <a href="https://fekri.ece.gatech.edu/" target="_blank" rel="noopener noreferrer">Faramarz Fekri</a>.</p>
+          <p>I earned my M.S. in the <a href="https://gsai.snu.ac.kr/en/" target="_blank" rel="noopener noreferrer">Interdisciplinary Program in Artificial Intelligence</a> at Seoul National University, advised by <a href="http://bdai.snu.ac.kr/en/people/professor" target="_blank" rel="noopener noreferrer">Sungzoon Cho</a>, and my B.S. in Electrical Engineering at <a href="https://www.kaist.ac.kr/en/" target="_blank" rel="noopener noreferrer">KAIST</a> with a minor in Business &amp; Technology Management.</p>
+          <p>My research focuses on <strong>making large language models more efficient</strong>, with an emphasis on algorithmic and system-level optimization — decoding algorithms, KV-cache management, and model architectures that make LLMs faster and more cost-efficient.</p>
+          <p>My long-term goal is to make powerful language models broadly accessible — not only to large corporations, but also to individual researchers, educators, and resource-constrained labs.</p>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <div class="education-list">
+            <article class="education-item">
+              <div class="item-heading">
+                <h3>Georgia Institute of Technology</h3>
+                <time>Sep 2026</time>
+              </div>
+              <p class="degree">Ph.D. in Machine Learning (ECE)</p>
+              <p class="detail">Advisor: Faramarz Fekri · Atlanta, GA</p>
+            </article>
+
+            <article class="education-item">
+              <div class="item-heading">
+                <h3>Seoul National University</h3>
+                <time>Sep 2024 – Aug 2026</time>
+              </div>
+              <p class="degree">M.S. Interdisciplinary Program in Artificial Intelligence</p>
+              <p class="detail">Advisor: Sungzoon Cho · Seoul, Korea</p>
+            </article>
+
+            <article class="education-item">
+              <div class="item-heading">
+                <h3>KAIST</h3>
+                <time>Mar 2017 – Aug 2024</time>
+              </div>
+              <p class="degree">B.S. Electrical Engineering</p>
+              <p class="detail">Minor: Business &amp; Technology Management · Daejeon, Korea</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="publications">
+          <h2>Selected Publications</h2>
+          <div class="publication-list">
+            <article class="publication">
+              <div class="publication-year">2026</div>
+              <div>
+                <h3>SpecExtend: A Drop-in Enhancement for Speculative Decoding of Long Sequences</h3>
+                <p class="authors"><strong>Jungyoub Cha</strong>, Hyunjong Kim, Sungzoon Cho</p>
+                <p class="venue">Findings of the Association for Computational Linguistics (ACL 2026)</p>
+                <div class="publication-links">
+                  <a href="https://arxiv.org/abs/2505.20776" target="_blank" rel="noopener noreferrer">arXiv</a>
+                  <a href="https://github.com/jycha98/SpecExtend" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="publication">
+              <div class="publication-year">2024</div>
+              <div>
+                <h3>CHOP: Integrating ChatGPT into EFL Oral Presentation Practice</h3>
+                <p class="authors"><strong>Jungyoub Cha</strong>, Jieun Han, Haneul Yoo, Alice Oh</p>
+                <p class="venue">Workshop on Leveraging LLMs for Next-Generation Educational Technologies (EDM 2024)</p>
+                <div class="publication-links">
+                  <a href="https://arxiv.org/abs/2407.07393" target="_blank" rel="noopener noreferrer">arXiv</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="item-heading">
+                <h3>Users &amp; Information Lab, KAIST</h3>
+                <time>Sep 2023 – Mar 2024</time>
+              </div>
+              <p class="position"><strong>Research Intern</strong><span> · Seongnam, Korea · Advisor: Alice Oh</span></p>
+              <ul>
+                <li>Initiated a research direction on using LLMs for real-time, pedagogically meaningful feedback in EFL oral-presentation practice.</li>
+                <li>Built the full prototype system integrating Whisper, GPT-4, and speech-assessment pipelines; ran participant studies and analyzed qualitative and quantitative results.</li>
+                <li>Published as first author at the EDM 2024 workshop and delivered the oral presentation.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="item-heading">
+                <h3>DAVIAN Lab, KAIST</h3>
+                <time>Jun 2023 – Aug 2023</time>
+              </div>
+              <p class="position"><strong>Research Intern</strong><span> · Seongnam, Korea · Advisor: Jaegul Choo</span></p>
+              <ul>
+                <li>Built an ASR system for math lectures in an extreme low-resource setting using contextual biasing, LLM rescoring, and fine-tuning to handle equations and domain-specific jargon.</li>
+                <li>Reduced Word Error Rate on mathematical jargon by ~45%, surpassing leading commercial Korean ASR systems (e.g., NAVER HyperCLOVA) on domain-specific test sets.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="item-heading">
+                <h3>NAVER Corp.</h3>
+                <time>Aug 2022 – Feb 2023</time>
+              </div>
+              <p class="position"><strong>Machine Learning Intern</strong><span> · Seongnam, Korea · Advisor: Kyungho Choi</span></p>
+              <ul>
+                <li>Developed a state-of-the-art Korean NER model (F1 = 0.91) by expanding the tag set and fine-tuning BERT; deployed for large-scale hate-speech analysis used by NAVER's CleanBot moderation team.</li>
+                <li>Built an open-domain event-extraction system integrating SRL + NER pipelines (~75% accuracy), deployed via Docker and Streamlit for internal use.</li>
+              </ul>
+            </article>
+
+            <article class="experience-item">
+              <div class="item-heading">
+                <h3>American Forces Network, ROK Army</h3>
+                <time>Jul 2019 – Jan 2021</time>
+              </div>
+              <p class="position"><strong>Sergeant, Language Specialist</strong><span> · Pyeongtaek, Korea</span></p>
+              <ul>
+                <li>Served as a KATUSA (Korean Augmentation to the U.S. Army), coordinating day-to-day operations in a bilingual environment.</li>
+                <li>Worked as a radio broadcaster, writing and delivering English scripts for programs aired to U.S. Army personnel at Camp Humphreys.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="more">
+          <div>
+            <h2>Honors</h2>
+            <div class="compact-list">
+              <div>
+                <span><strong>National Scholarship</strong> — Korea Student Aid Foundation, KAIST</span>
+                <time>2017 – 2023</time>
+              </div>
+              <div>
+                <span><strong>AI Fellowship</strong> — Interdisciplinary Program in AI, Seoul National University</span>
+                <time>2024 – Present</time>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2>Languages</h2>
+            <div class="compact-list">
+              <div><span><strong>Korean</strong></span><span>Native</span></div>
+              <div><span><strong>English</strong></span><span>Native</span></div>
+              <div><span><strong>Mandarin Chinese</strong></span><span>Intermediate</span></div>
+            </div>
+          </div>
+        </section>
+
+        <footer>© 2026 Jungyoub Cha. All rights reserved.</footer>
+      </main>
     </div>
-
-    <!-- Education -->
-    <section class="container">
-      <h2>Education</h2>
-      <ul class="education-list">
-        <li>
-          <h3>M.S. Interdisciplinary Program in Artificial Intelligence, Seoul National University</h3>
-          <p><em>Aug&nbsp;2026</em></p>
-          <p>Advisor: <a href="http://dm.snu.ac.kr/en/people/professor" target="_blank" rel="noopener noreferrer">Sungzoon Cho</a></p>
-        </li>
-        <li>
-          <h3>B.S. Electrical Engineering, KAIST</h3>
-          <p><em>Aug&nbsp;2024</em></p>
-          <p>Minor: Business and Technology Management</p>
-          <p>GPA (Last 2 years): 3.92/4.3</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Publications -->
-    <section class="container">
-      <h2>Publications</h2>
-      <ul class="publication-list">
-        <li>
-          <h3>SpecExtend: A Drop-in Enhancement for Speculative Decoding of Long Sequences</h3>
-          <p><strong>Jungyoub Cha</strong>, Hyunjong Kim, Sungzoon Cho</p>
-          <p><em>arXiv preprint, 2025</em></p>
-          <p><a class="arxiv-badge" href="https://arxiv.org/abs/2505.20776" target="_blank" rel="noopener noreferrer">arXiv</a></p>
-        </li>
-        <li>
-          <h3>CHOP: Integrating ChatGPT into EFL Oral Presentation Practice</h3>
-          <p><strong>Jungyoub Cha</strong>, Jieun Han, Haneul Yoo, Alice Oh</p>
-          <p><em>Educational Data Mining (EDM) 2024, Workshop on Leveraging Large Language Models for Next Generation Educational Technologies.</em> <strong>15 Citations</strong>.</p>
-          <p><a class="arxiv-badge" href="https://arxiv.org/abs/2407.07393" target="_blank" rel="noopener noreferrer">arXiv</a></p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Professional & Research experience -->
-    <section class="container">
-      <h2>Professional &amp; Research Experience</h2>
-
-      <div class="experience-entry">
-        <div class="experience-header">
-          <h3>KAIST CS</h3>
-          <span class="experience-location">Daejeon, Korea</span>
-        </div>
-        <div class="experience-subheader">
-          <span class="experience-title">Undergraduate Researcher</span>
-          <span class="experience-date">Sep 2023 - Mar 2024</span>
-        </div>
-        <ul class="experience-details">
-          <li>Identified the lack of scalable, personalized resources for EFL oral presentation practice and initiated a research direction on using LLMs to provide real-time, pedagogically meaningful feedback.</li>
-          <li>Built the full prototype system integrating Whisper, GPT-4 and speech assessment pipelines, ran participant studies and analyzed qualitative and quantitative results to examine learners’ perceptions and design considerations</li>
-          <li>Published the work at the Educational Data Mining 2024 LLM workshop (15 citations) and delivered the oral presentation.</li>
-        </ul>
-        <p><strong>Advisor:</strong>
-          <a href="https://aliceoh9.github.io/" target="_blank" rel="noopener noreferrer">
-            Alice Oh
-          </a>
-        </p>
-      </div>
-
-      <div class="experience-entry">
-        <div class="experience-header">
-          <h3>KAIST AI</h3>
-          <span class="experience-location">Seongnam, Korea</span>
-        </div>
-        <div class="experience-subheader">
-          <span class="experience-title">Research Intern</span>
-          <span class="experience-date">Jun 2023 - Aug 2023</span>
-        </div>
-        <ul class="experience-details">
-          <li>Built an ASR system for math lectures in an extreme low-resource setting, applying contextual biasing, LLM rescoring, and fine-tuning to handle equations and domain-specific jargon.</li>
-          <li>Enhanced OpenAI Whisper baselines, reducing Word Error Rate on mathematical jargon by ~45% and surpassing leading commercial Korean ASR systems (e.g., NAVER’s HyperClova) on domain-specific test sets.</li>
-        </ul>
-        <p><strong>Advisor:</strong>
-          <a href="https://sites.google.com/site/jaegulchoo/" target="_blank" rel="noopener noreferrer">
-            Jaegul Choo
-          </a>
-        </p>
-      </div>
-
-      <div class="experience-entry">
-        <div class="experience-header">
-          <h3>NAVER Corp.</h3>
-          <span class="experience-location">Seongnam, Korea</span>
-        </div>
-        <div class="experience-subheader">
-          <span class="experience-title">Machine Learning Intern</span>
-          <span class="experience-date">Aug 2022 - Feb 2023</span>
-        </div>
-        <ul class="experience-details">
-          <li>Developed a state-of-the-art Korean NER model (F1 = 0.91) by expanding the tag set and fine-tuning BERT, and deployed it for large-scale hate speech analysis used by NAVER’s CleanBot moderation team.</li>
-          <li>Built an open-domain event extraction system with limited data by integrating SRL + NER pipelines, achieved ~75% accuracy and deployed the system using Docker and Streamlit for internal use.</li>
-        </ul>
-        <p><strong>Advisor:</strong> Kyungho Choi</p>
-      </div>
-
-      <div class="experience-entry">
-        <div class="experience-header">
-          <h3>American Forces Network, ROK Army</h3>
-          <span class="experience-location">Pyeongtaek, Korea</span>
-        </div>
-        <div class="experience-subheader">
-          <span class="experience-title">Sergeant, Language Specialist</span>
-          <span class="experience-date">Jul 2019 - Jan 2021</span>
-        </div>
-        <ul class="experience-details">
-          <li>Completed mandatory military service as a KATUSA (Korean Augmentation to the U.S. Army), coordinating day-to-day operations in a bilingual environment.</li>
-          <li>Worked as a radio broadcaster, writing and delivering English scripts for programs aired to U.S. Army personnel at Camp Humphreys, South Korea.</li>
-        </ul>
-      </div>
-    </section>
-
-    </section>
-
-    <!-- Awards & Honors -->
-    <section class="container">
-      <h2>Honors</h2>
-      <ul class="awards-list">
-        <li class="award-item">
-          <span class="award-text"><strong>National Scholarship</strong> - Korea Student Aid Foundation, KAIST</span>
-          <span class="award-date">2017 ~ 2023</span>
-        </li>
-        <li class="award-item">
-          <span class="award-text"><strong>AI Fellowship</strong> - Interdisciplinary Program in AI, Seoul National University</span>
-          <span class="award-date">2024 ~ Present</span>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Languages -->
-    <section class="container">
-      <h2>Languages</h2>
-      <p class="languages-text">
-        <span><strong>Korean</strong> (Native)</span>
-        <span><strong>English</strong> (Native)</span>
-        <span><strong>Mandarin Chinese</strong> (Elementary)</span>
-      </p>
-    </section>
-
-    <!-- Selected Coursework -->
-    <section class="container">
-      <h2 class="coursework-title">Selected Coursework</h2>
-
-      <!-- KAIST -->
-      <div class="coursework-school-row">
-        <span class="coursework-school">KAIST</span>
-        <span class="coursework-grade-label">Grade</span>
-      </div>
-      <!-- Reordered and expanded course list without dates -->
-      <div class="coursework-row">
-        <span>Machine Learning (CS376)</span>
-        <span class="course-grade">A+</span>
-      </div>
-      <div class="coursework-row">
-        <span>Optimization for AI (AI505)</span>
-        <span class="course-grade">A</span>
-      </div>
-      <div class="coursework-row">
-        <span>AI Convergence Capstone Design (EE488)</span>
-        <span class="course-grade">A</span>
-      </div>
-      <div class="coursework-row">
-        <span>Data Structures and Algorithms for Electrical Engineering (EE205)</span>
-        <span class="course-grade">A+</span>
-      </div>
-      <div class="coursework-row">
-        <span>Introduction to Multimedia (EE474)</span>
-        <span class="course-grade">A+</span>
-      </div>
-      <div class="coursework-row">
-        <span>Brains, Machines and Society (EE469)</span>
-        <span class="course-grade">A</span>
-      </div>
-      <div class="coursework-row">
-        <span>Programming Structure for Electrical Engineering (EE209)</span>
-        <span class="course-grade">S</span>
-      </div>
-      <div class="coursework-row">
-        <span>Introduction to Electronics Design Lab (EE305)</span>
-        <span class="course-grade">A</span>
-      </div>
-      <div class="coursework-row">
-        <span>Digital System Design (EE303)</span>
-        <span class="course-grade">A</span>
-      </div>
-
-      <!-- SNU -->
-      <h3 class="coursework-school">Seoul National University</h3>
-      <!-- Reordered courses without dates -->
-      <div class="coursework-row">
-        <span>Recent Topics in Artificial Intelligence</span>
-        <span class="course-grade">A+</span>
-      </div>
-      <div class="coursework-row">
-        <span>Representation Learning</span>
-        <span class="course-grade">A−</span>
-      </div>
-      <div class="coursework-row">
-        <span>Math and Statistics Foundations for Data Science</span>
-        <span class="course-grade">A−</span>
-      </div>
-    </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="year"></span> Jungyoub Cha. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="script.js"></script>
-</body>
+  </body>
 </html>
