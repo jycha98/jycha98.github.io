@@ -167,6 +167,12 @@ a:hover {
   color: var(--muted);
 }
 
+.cv-note {
+  margin: -10px 0 0;
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
 main {
   display: flex;
   min-width: 0;
