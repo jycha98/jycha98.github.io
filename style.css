@@ -207,18 +207,6 @@ section h2 {
   margin-bottom: 0;
 }
 
-.research-interests {
-  padding: 24px 28px 28px;
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 var(--photo-radius) var(--photo-radius) 0;
-  background: linear-gradient(120deg, var(--accent-soft), transparent 62%);
-}
-
-.research-interests h2 {
-  margin-bottom: 18px;
-}
-
 .interest-list {
   display: flex;
   flex-wrap: wrap;
@@ -435,10 +423,6 @@ footer {
   .page-layout {
     padding: 36px 20px 72px;
     gap: 44px;
-  }
-
-  .research-interests {
-    padding: 20px;
   }
 
   .item-heading {
