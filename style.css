@@ -212,19 +212,22 @@ section h2 {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  gap: 10px;
+  gap: 8px 18px;
   list-style: none;
 }
 
 .interest-list li {
-  padding: 8px 13px;
-  border: 1px solid color-mix(in srgb, var(--accent) 24%, var(--line));
-  border-radius: 999px;
-  background: rgb(251 250 247 / 74%);
   color: var(--accent);
-  font-size: 14.5px;
+  font-family: "Newsreader", serif;
+  font-size: 20px;
   font-weight: 600;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.01em;
+}
+
+.interest-list li + li::before {
+  margin-right: 18px;
+  color: var(--line);
+  content: "·";
 }
 
 .education-list,
